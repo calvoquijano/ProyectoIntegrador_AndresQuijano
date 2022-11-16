@@ -1,6 +1,7 @@
 package com.odontologiacalvo.Odontologia.Calvo.dao.impl;
 
 import com.odontologiacalvo.Odontologia.Calvo.dao.IDao;
+import com.odontologiacalvo.Odontologia.Calvo.model.Address;
 import com.odontologiacalvo.Odontologia.Calvo.model.Dentist;
 import org.apache.log4j.Logger;
 
@@ -24,8 +25,9 @@ public class IDaoDentistH2 implements IDao<Dentist> {
     }
 
     @Override
-    public void update(Dentist dentist) {
+    public Address update(Dentist dentist) {
 
+        return null;
     }
 
     @Override

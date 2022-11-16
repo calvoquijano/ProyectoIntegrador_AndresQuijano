@@ -19,9 +19,9 @@ public class IDaoAddressH2 implements IDao<Address> {
         return null;
     }
 
-    @Override
-    public void update(Address address) {
+    public Address update(Address address) {
 
+        return address;
     }
 
     @Override

@@ -1,16 +1,16 @@
 package com.odontologiacalvo.Odontologia.Calvo.model;
 
-import java.time.LocalDate;
+import java.sql.Date;
 
 public class Patient extends Record{
-    //Atributos
+    //Attributes
     private int identificationDocument;
-    private LocalDate dischargeDate;
+    private Date dischargeDate;
     private Address address;
     //Constructor
     public Patient() {
     }
-    public Patient(String firstName, String lastName, String email, String password, String patient, int identificationDocument, LocalDate dischargeDate, Address address) {
+    public Patient(String firstName, String lastName, String email, String password, String patient, int identificationDocument, Date dischargeDate, Address address) {
         super(firstName, lastName, email, password, patient);
         this.identificationDocument = identificationDocument;
         this.dischargeDate = dischargeDate;
@@ -19,8 +19,8 @@ public class Patient extends Record{
     //Encapsulation
     public int getIdentificationDocument() { return identificationDocument; }
     public void setIdentificationDocument(int identificationDocument) { this.identificationDocument = identificationDocument; }
-    public LocalDate getDischargeDate() { return dischargeDate; }
-    public void setDischargeDate(LocalDate dischargeDate) { this.dischargeDate = dischargeDate; }
+    public Date getDischargeDate() { return dischargeDate; }
+    public void setDischargeDate(Date dischargeDate) { this.dischargeDate = dischargeDate; }
     public Address getAddress() { return address; }
     public void setAddress(Address address) { this.address = address; }
     //Overwrite
