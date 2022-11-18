@@ -6,16 +6,16 @@ public abstract class Record {
     public String lastName;
     public String email;
     public String password;
-    public String patient;
+    public Boolean role;
     //Constructor
     public Record() {
     }
-    public Record(String firstName, String lastName, String email, String password, String patient) {
+    public Record(String firstName, String lastName, String email, String password, Boolean role) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
-        this.patient = patient;
+        this.role = role;
     }
     //Encapsulation
     public String getFirstName() { return firstName; }
@@ -26,6 +26,6 @@ public abstract class Record {
     public void setEmail(String email) { this.email = email; }
     public String getPassword() { return password; }
     public void setPassword(String password) { this.password = password; }
-    public String getPatient() { return patient; }
-    public void setPatient(String patient) { this.patient = patient; }
+    public Boolean getRole() { return role; }
+    public void setRole(Boolean role) { this.role = role; }
 }

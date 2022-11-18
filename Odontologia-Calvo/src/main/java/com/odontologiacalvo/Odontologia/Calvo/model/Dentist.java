@@ -6,8 +6,8 @@ public class Dentist extends Record{
     //Constructor
     public Dentist() {
     }
-    public Dentist(String firstName, String lastName, String email, String password, String patient, int enrollment) {
-        super(firstName, lastName, email, password, patient);
+    public Dentist(String firstName, String lastName, String email, String password, Boolean role, int enrollment) {
+        super(firstName, lastName, email, password, role);
         this.enrollment = enrollment;
     }
     //Encapsulation
@@ -22,7 +22,7 @@ public class Dentist extends Record{
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", patient='" + patient + '\'' +
+                ", admin='" + role + '\'' +
                 '}';
     }
 }
